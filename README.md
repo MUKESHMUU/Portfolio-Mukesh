@@ -148,3 +148,81 @@ Verify installation:
 node -v
 git --version
 pnpm -v
+
+📥 1. Clone the Repository
+git clone https://github.com/MUKESHMUU/developer-portfolio.git
+cd developer-portfolio
+📦 2. Install Dependencies
+
+Using pnpm (recommended):
+
+pnpm install
+
+Using npm:
+
+npm install
+🔐 3. Setup Environment Variables
+
+Create a .env file in the root directory:
+
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# Optional – Contact Form Configuration
+TELEGRAM_BOT_TOKEN=your_bot_token
+TELEGRAM_CHAT_ID=your_chat_id
+
+GMAIL_PASSKEY=your_gmail_app_password
+EMAIL_ADDRESS=your_email@gmail.com
+
+Note: Contact form features require either Telegram or Gmail configuration.
+
+▶️ 4. Run Development Server
+pnpm dev
+
+or
+
+npm run dev
+
+Open in browser:
+
+http://localhost:3000
+🐳 Docker Deployment (Optional)
+Build Production Image
+docker build -t mukesh-portfolio -f Dockerfile.prod .
+Run Container
+docker run -p 3000:3000 mukesh-portfolio
+☁️ Deployment Options
+
+This portfolio can be deployed on:
+
+Vercel (Recommended for Next.js)
+
+Netlify
+
+AWS EC2
+
+Any Docker-supported cloud server
+
+📬 Contact
+
+📧 Email: mukesh.25mca@kct.ac.in
+
+🌐 Portfolio: https://mukeshmuu.netlify.app/
+
+💻 GitHub: https://github.com/MUKESHMUU
+
+📄 License
+
+This project is licensed under the MIT License.
+
+⭐ Support
+
+If you found this portfolio helpful:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+🔧 Customize it for your own use
+
+Built and maintained by Mukesh (Mu⚡)
